@@ -6,28 +6,28 @@ import com.google.gson.annotations.SerializedName;
  * Created by s3081865 on 14/08/2017.
  */
 
-public class Movie {
+public class MovieEntity {
 
     @SerializedName("id")
-    public int id;
+    private int id;
 
     @SerializedName("original_title")
-    public String name;
+    private String name;
 
     @SerializedName("poster_path")
-    public String posterUrl;
+    private String posterUrl;
 
     @SerializedName("overview")
-    public String plotSynopsis;
+    private String plotSynopsis;
 
     @SerializedName("vote_average")
-    public double averageRating;
+    private double averageRating;
 
     @SerializedName("release_date")
-    public String releaseDate;
+    private String releaseDate;
 
     @SerializedName("backdrop_path")
-    public String backdropUrl;
+    private String backdropUrl;
 
     public int getId() {
         return id;
